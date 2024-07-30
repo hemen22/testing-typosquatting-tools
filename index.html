@@ -1,1 +1,106 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dnstwist vs Ail typo website</title>
+</head>
+<body>
+   <h3>Dnstwist </h3>    
+   <p>Dnstwist is a valuable tool for identifying potential phishing domains, typosquatting attempts, and other security risks.
+     However, the generation of thousands of permutations, especially for longer input domains, can overwhelm analysts with irrelevant data. 
+     To enhance the efficiency and effectiveness of domain fuzzing, it is essential to focus on registered domains. one feature of dnstwist is to give as the typosquatting domain name that are registered. 
+     we use the command below to check registered domain only by using Dnstwist</p>
+     <h4> dnstwist --registered domain.name</h4>
+     <dev> let's try this feature by using one popular domain name :- Telegram.org </dev>
+     <p> dnstwist --r telegram.org</p>
+     <img src="images/telegram.png">
+     <h2>i tried some from the out put i get and i will put the screenshoot of what i get:-</h3>
+     <h3> Addition  telegrama.org 199.59.243.226 NS:ns1.bodis.com</h3>
+     <img src="images/telegrama.png">
+     <h3>addition telegramm.org 20.113.53.251 NS:ns01.memail-dns.com </h3>
+     <img src="images/telegramm.png">
+     <h3>hyphenation t-elegram.org 104.21.64.9 2606:4700:3032::ac43:adbc NS:arturo.ns.cloudflare.com</h3>
+     <img src="images/t-elegram.png">
+     <h3>repetition  teelegram.org  37.48.65.151 NS:ns1.chookdns.com</h3>
+     <img src ="images/teelegram (2).png">
+     <h3>repetition teleegram.org 103.224.212.213 NS:ns1.abovedomains.com MX:park-mx.above.com</h3>
+     <img src ="images/teleegram.png">
+     <h3>The tool can perform real-time lookups to return geographical location (approximated to the country) of IPv4 addresses.</h3>
+     <img src ="images/amazon.png">
+     <p>On the other hand, if only selected algorithms need to be used, --fuzzers argument is available, which takes a comma-separated list. <h3>$ dnstwist --fuzzers "homoglyph,hyphenation" domain.name</h3></p>
+     <h2>Compare and contrast dnstwist vs ail-typo-website </h2>
+    <h3> DNSTWIST > <a>https://github.com/elceef/dnstwist.git</a></h3>
+    <h3> AIL-TYPO-WEBSITE> <a>https://github.com/typosquatter/ail-typo-website.git</a></h3>
+
+    
+<table border="1">
+    <tr>
+      <th></th>
+      <th>Dnstwist </th>
+      <th>Ail-typo-website</th>
+    </tr>
+    <tr>
+      <td>User interface </td>
+      <td>Only shows permutation, ip address with geoip, name server and mail server </td>
+      <td>Shows permutation ,address with geoip , name server,mail server, web title , web similarity and ressoure diff, similarity prob?</td>
+    </tr>
+    <tr>
+      <td>Output </td>
+      <td>List of potential typosquatting domains </td>
+      <td>Detailed similarity report</td>
+    </tr>
+    <tr>
+      <td>Output Download  options </td>
+      <td>Csv 
+        json
+        </td>
+      <td>List of variation 
+        Domains identified 
+        Mlsp feed 
+        Mlsp json
+        </td>
+    </tr>
+  </table>
+  <h3>Comparing dnstwist and ail-typo-website by using different domain.names</h3>
+     
+<table border="=1">
+    <tr>
+      <th>Domain names </th>
+      <th>Dnstwist </th>
+      <th>Ail-typo-website</th>
+    </tr>
+    <tr>
+      <td>Facebook.com  </td>
+      <td>4428 permutations
+         362 registered</td>
+        
+      <td>Found 6010 
+        1214 registered
+        </td>
+    </tr>
+    <tr>
+      <td>Instagram.com</td>
+      <td>5588 permutations
+        365 registered
+         </td>
+      <td>6166 permutations
+        605 registered
+        </td>
+    </tr>
+    <tr>
+      <td>Amazon.de </td>
+      <td>1093 permutations
+        225 registered
+        
+        </td>
+      <td>5278 permutations
+        1195  registered
+        
+        </td>
+        </tr>
+</table>
+
+</body>
+
+</html>
